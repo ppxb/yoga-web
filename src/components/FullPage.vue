@@ -6,23 +6,16 @@
         v-for="i in pageNum"
         :key="i"
         :class="['page-nav-item', pageIndex === i - 1 ? 'active' : '']"
+        @click="navClick && turnTo(i)"
       >
-        0 {{ i }}
+        0{{ i }}
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  onMounted,
-  onUnmounted,
-  Ref,
-  ref,
-  watch,
-  watchEffect
-} from 'vue'
+import { defineComponent, onMounted, onUnmounted, Ref, ref } from 'vue'
 import useThrottle from '../hooks/useThrottle'
 
 export default defineComponent({
@@ -31,6 +24,10 @@ export default defineComponent({
     showNav: {
       type: Boolean,
       default: true
+    },
+    navClick: {
+      type: Boolean,
+      default: false
     },
     delay: {
       type: Number,
@@ -59,19 +56,24 @@ export default defineComponent({
       pageIndex.value = -(position.value / viewHeight.value)
     }
 
+    const turnTo = (index: number) => {
+      pageIndex.value = index - 1
+      container.value.style.top = `${-pageIndex.value * viewHeight.value}px`
+    }
+
     const pageUp = () => {
       if (
         -container.value.offsetTop <=
         viewHeight.value * (pageNum.value - 2)
       ) {
-        position.value = position.value - viewHeight.value
+        position.value = container.value.offsetTop - viewHeight.value
         turnPage(position.value)
       }
     }
 
     const pageDown = () => {
       if (-container.value.offsetTop >= viewHeight.value) {
-        position.value = position.value + viewHeight.value
+        position.value = container.value.offsetTop + viewHeight.value
         turnPage(position.value)
       }
     }
@@ -88,7 +90,7 @@ export default defineComponent({
       document.removeEventListener('wheel', handleMouseWheel)
     })
 
-    return { container, pageNum, pageIndex }
+    return { container, pageNum, pageIndex, turnTo }
   }
 })
 </script>
