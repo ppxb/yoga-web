@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/loading',
     name: 'Loading',
     component: () => import('../components/Loading.vue')
+  },
+  {
+    path: '/index',
+    name: 'Index',
+    component: () => import('../views/Index.vue')
   }
 ]
 

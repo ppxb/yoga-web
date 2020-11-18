@@ -1,7 +1,6 @@
 * {
-  font-family: 'Barlow Semi Condensed';
+  font-family: 'Teko';
   user-select: none;
-  text-transform: uppercase;
 }
 
 .chn {
@@ -14,19 +13,27 @@
   box-sizing: border-box;
 
   &:nth-child(1) {
-    align-items: flex-end;
-    background: url('https://images.pexels.com/photos/4325466/pexels-photo-4325466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-attachment: fixed;
-    background-color: #3b403c;
+    justify-content: space-between;
+    padding: 160px 100px 60px 100px;
 
     .slogan {
-      margin: 0 160px 120px 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
       & > div {
-        color: #fff;
-        font-size: 4em;
-        font-weight: 700;
+        color: #333;
+        font-size: 5em;
+        font-weight: 500;
       }
+    }
+
+    .pic {
+      width: 25%;
+      background-image: url('https://images.pexels.com/photos/4426398/pexels-photo-4426398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-position: center;
+      background-size: cover;
+      margin-right: 80px;
     }
   }
 

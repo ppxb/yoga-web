@@ -4,13 +4,12 @@
   </transition>
   <div class="about" v-if="!loading">
     <full-page>
-      <div className="page">
-        <div className="slogan">
-          <div>in yoga</div>
-          <div>no more than</div>
-          <div>and</div>
-          <div>beyond</div>
+      <div class="page">
+        <div class="slogan">
+          <div>Love &</div>
+          <div>Yoga</div>
         </div>
+        <div class="pic"></div>
       </div>
       <div className="page">
         <div className="intorduce">

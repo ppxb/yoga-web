@@ -2,14 +2,9 @@
   <div class="page-container" ref="container">
     <slot></slot>
     <div v-if="showNav" class="page-nav">
-      <div
-        v-for="i in pageNum"
-        :key="i"
-        :class="['page-nav-item', pageIndex === i - 1 ? 'active' : '']"
-        @click="navClick && turnTo(i)"
-      >
-        0{{ i }}
-      </div>
+      {{ pageIndex + 1 }}
+      <div class="nav-divider"></div>
+      {{ pageNum }}
     </div>
   </div>
 </template>
@@ -116,24 +111,20 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     top: 50%;
-    right: 60px;
+    right: 80px;
     transform: translateY(-50%);
     user-select: none;
+    font-weight: 700;
+    color: #333;
 
-    & .page-nav-item {
-      font-size: 1.125em;
-      color: rgba(255, 255, 255, 0.7);
-      transition: all 0.25s ease;
-      padding: 8px 0;
-      letter-spacing: 0.1em;
-    }
-
-    & .active {
-      font-size: 2.125em;
-      color: #fff;
-      font-weight: 700;
+    .nav-divider {
+      height: 80px;
+      width: 2px;
+      margin: 20px 0;
+      background: rgba(0, 0, 0, 0.7);
     }
   }
 }
