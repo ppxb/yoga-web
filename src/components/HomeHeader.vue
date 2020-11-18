@@ -22,16 +22,16 @@ export default defineComponent({})
   box-sizing: border-box;
   z-index: 999;
   padding: 0 100px;
-  transition: all 0.25s linear;
+  transition: all 0.25s ease;
 
   .logo {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 500;
     color: #333;
   }
 
   .login {
-    font-size: 1.875em;
+    font-size: 1.5em;
     color: #333;
     transition: color 0.25s ease;
 

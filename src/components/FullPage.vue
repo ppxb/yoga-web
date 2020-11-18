@@ -79,7 +79,7 @@ export default defineComponent({
           setTimeout(() => {
             header?.classList.remove('toggle-out')
             header?.classList.add('toggle-in')
-          }, 1000)
+          }, 800)
         }
       }
     )

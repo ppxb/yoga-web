@@ -41,7 +41,7 @@
     .pic-wrapper {
       display: flex;
       flex-direction: column;
-      width: 25%;
+      width: 440px;
       margin-right: 80px;
 
       .pic {
@@ -50,10 +50,10 @@
         background-image: url('https://images.pexels.com/photos/3822455/pexels-photo-3822455.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
         background-position: center;
         background-size: cover;
-        margin-bottom: 20px;
       }
 
       .desc {
+        margin-top: 20px;
         font-size: 1.25em;
         color: rgba($color: #333, $alpha: 0.9);
       }
@@ -61,8 +61,6 @@
   }
 
   &:nth-child(2) {
-    background-color: #3b403c;
-
     .intorduce {
       flex: 2;
       display: flex;
@@ -70,7 +68,7 @@
       margin: 0 0 120px 160px;
 
       .title > div {
-        color: #fff;
+        color: #333;
         font-size: 4em;
         font-weight: 700;
       }
@@ -93,7 +91,7 @@
       .desc {
         flex: 1;
         font-size: 1.25em;
-        color: #fff;
+        color: #333;
         margin-top: 40px;
 
         & > div {
@@ -110,8 +108,6 @@
   }
 
   &:nth-child(3) {
-    background-color: #998b6e;
-
     .intorduce {
       flex: 2;
       display: flex;
@@ -119,7 +115,7 @@
       margin: 0 0 120px 160px;
 
       .title > div {
-        color: #fff;
+        color: #333;
         font-size: 4em;
         font-weight: 700;
       }
@@ -142,7 +138,7 @@
       .desc {
         flex: 1;
         font-size: 1.25em;
-        color: #fff;
+        color: #333;
         margin-top: 40px;
 
         & > div {
@@ -159,8 +155,6 @@
   }
 
   &:nth-child(4) {
-    background-color: #b1a998;
-
     .title {
       flex: 1;
       display: flex;
@@ -169,12 +163,12 @@
       margin: 0 0 120px 160px;
 
       .date {
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(0, 0, 0, 0.85);
         font-size: 2em;
       }
 
       & > div {
-        color: #fff;
+        color: #333;
         font-size: 4em;
         font-weight: 700;
       }
@@ -189,15 +183,13 @@
 
       & > div {
         font-size: 1em;
-        color: #fff;
+        color: #333;
         margin-bottom: 12px;
       }
     }
   }
 
   &:nth-child(5) {
-    background-color: #c0bcb1;
-
     .intorduce {
       flex: 1;
       display: flex;
@@ -206,13 +198,13 @@
       margin: 0 0 120px 160px;
 
       .title > div {
-        color: #fff;
+        color: #333;
         font-size: 4em;
         font-weight: 700;
       }
 
       .copy-right {
-        color: #fff;
+        color: #333;
         width: fit-content;
 
         & > div {
@@ -230,7 +222,7 @@
       padding-right: 240px;
 
       .desc {
-        color: #fff;
+        color: #333;
 
         & > div {
           margin-bottom: 8px;
