@@ -14,26 +14,49 @@
 
   &:nth-child(1) {
     justify-content: space-between;
-    padding: 160px 100px 60px 100px;
+    padding: 160px 100px 60px;
 
     .slogan {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
 
-      & > div {
+      .founder {
+        font-size: 1.5em;
+        color: rgba($color: #333, $alpha: 0.9);
+      }
+
+      .sub-title {
+        font-size: 1.25em;
+        color: rgba($color: #333, $alpha: 0.9);
+      }
+
+      .title {
         color: #333;
-        font-size: 5em;
+        font-size: 6em;
         font-weight: 500;
       }
     }
 
-    .pic {
+    .pic-wrapper {
+      display: flex;
+      flex-direction: column;
       width: 25%;
-      background-image: url('https://images.pexels.com/photos/4426398/pexels-photo-4426398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-      background-position: center;
-      background-size: cover;
       margin-right: 80px;
+
+      .pic {
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.pexels.com/photos/3822455/pexels-photo-3822455.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 1.25em;
+        color: rgba($color: #333, $alpha: 0.9);
+      }
     }
   }
 

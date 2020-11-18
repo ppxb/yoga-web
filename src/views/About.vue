@@ -2,14 +2,19 @@
   <transition name="fade">
     <loading v-if="loading" />
   </transition>
-  <div class="about" v-if="!loading">
+  <div v-if="!loading">
+    <home-header />
     <full-page>
       <div class="page">
         <div class="slogan">
-          <div>Love &</div>
-          <div>Yoga</div>
+          <div class="founder">HEJIAYI × XIEXUEMEI</div>
+          <div class="title">Love & Yoga</div>
+          <div class="sub-title">More than and beyond</div>
         </div>
-        <div class="pic"></div>
+        <div class="pic-wrapper">
+          <div class="pic"></div>
+          <div class="desc">Hatha Yoga</div>
+        </div>
       </div>
       <div className="page">
         <div className="intorduce">
@@ -114,13 +119,15 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue'
+import HomeHeader from '@/components/HomeHeader.vue'
 import Loading from '@/components/Loading.vue'
 import FullPage from '@/components/FullPage.vue'
 
 export default defineComponent({
   components: {
     FullPage,
-    Loading
+    Loading,
+    HomeHeader
   },
   setup() {
     const loading = ref(true)
@@ -131,7 +138,7 @@ export default defineComponent({
       }, 1500)
     })
 
-    return { loading }
+    return { loading, HomeHeader }
   }
 })
 </script>

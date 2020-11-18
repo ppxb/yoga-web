@@ -21,7 +21,7 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #3b403c;
+  background: #fff;
   user-select: none;
   z-index: 9999;
   position: absolute;
@@ -33,9 +33,9 @@ export default defineComponent({
     position: relative;
     justify-content: center;
     .title-inner {
-      font-size: 2em;
-      color: #fff;
-      font-weight: 700;
+      font-size: 4em;
+      color: #333;
+      font-weight: 500;
       &::before,
       &::after {
         content: attr(data-text);

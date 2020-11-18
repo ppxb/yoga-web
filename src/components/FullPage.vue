@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted, Ref, ref } from 'vue'
+import { defineComponent, onMounted, onUnmounted, Ref, ref, watch } from 'vue'
 import useThrottle from '../hooks/useThrottle'
 
 export default defineComponent({
@@ -19,10 +19,6 @@ export default defineComponent({
     showNav: {
       type: Boolean,
       default: true
-    },
-    navClick: {
-      type: Boolean,
-      default: false
     },
     delay: {
       type: Number,
@@ -73,6 +69,21 @@ export default defineComponent({
       }
     }
 
+    watch(
+      () => position.value,
+      (newV, oldV) => {
+        if (newV !== oldV) {
+          const header = document.querySelector('.home-header')
+          header?.classList.remove('toggle-in')
+          header?.classList.add('toggle-out')
+          setTimeout(() => {
+            header?.classList.remove('toggle-out')
+            header?.classList.add('toggle-in')
+          }, 1000)
+        }
+      }
+    )
+
     onMounted(() => {
       viewHeight.value = document.documentElement.clientHeight
       pageNum.value = document.querySelectorAll('.page').length
@@ -117,14 +128,14 @@ body {
     right: 80px;
     transform: translateY(-50%);
     user-select: none;
-    font-weight: 700;
+    font-weight: 500;
     color: #333;
 
     .nav-divider {
       height: 80px;
       width: 2px;
       margin: 20px 0;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(#333, 0.7);
     }
   }
 }
