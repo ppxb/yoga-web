@@ -71,7 +71,7 @@
         <div className="news">
           <div class="news-item">
             <div class="title">3rd Anniversary Celebration</div>
-            <div class="date">11 / 19 / 2020</div>
+            <div class="date">19 / 11 / 2020</div>
             <div class="chn">三周年庆典活动</div>
           </div>
         </div>
