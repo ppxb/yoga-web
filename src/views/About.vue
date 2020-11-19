@@ -102,7 +102,6 @@
             </div>
             <div>印瑜伽拥有经验丰富的教练团队，致力于会员的瑜伽练习体验</div>
             <div>以最专业的态度和最完美的姿态对待每一位会员</div>
-            <div>In Life In Yoga</div>
             <div>享受生活，享受瑜伽</div>
             <div class="title">Wechat</div>
             <div class="wechat">
