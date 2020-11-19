@@ -1,5 +1,6 @@
 git pull
-yarn --registry=https://registry.npm.taobao.org/ && yarn build
+yarn
+yarn build
 docker exec -it idlex bash
-echo "hello"
+nginx
 exit
