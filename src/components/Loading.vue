@@ -33,7 +33,7 @@ export default defineComponent({
     position: relative;
     justify-content: center;
     .title-inner {
-      font-size: 3.5em;
+      font-size: 4em;
       color: #333;
       font-weight: 500;
       &::before,
