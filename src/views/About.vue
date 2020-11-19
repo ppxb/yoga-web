@@ -17,37 +17,45 @@
         </div>
       </div>
       <div className="page">
-        <div className="intorduce">
-          <div className="title">
-            <div>caoch</div>
-            <div>with</div>
-            <div>experienced</div>
+        <div className="title">
+          <div>
+            COACH
+          </div>
+          <div>
+            ×
+          </div>
+          <div>
+            HEJIAYI
           </div>
         </div>
         <div className="detail">
-          <div className="desc">
-            <div className="name active">HE JIAYI</div>
-            <div>Founder of in Yoga</div>
-            <div>Ashtanga Certified Coach</div>
-            <div>Hatha Yoga Certified Coach</div>
-            <div>American Yoga League Certified Instructor</div>
-            <div>KRIYOGA 400 hours certified coach</div>
+          <div className="text-img">
+            <div class="text">
+              <div>Founder of in Yoga</div>
+              <div>Ashtanga Certified Coach</div>
+              <div>Hatha Yoga Certified Coach</div>
+              <div>American Yoga League Certified Instructor</div>
+              <div>KRIYOGA 400 hours certified coach</div>
+            </div>
           </div>
-          <div className="pic"></div>
+          <div class="img" />
         </div>
       </div>
       <div className="page">
-        <div className="intorduce">
-          <div className="title">
-            <div>caoch</div>
-            <div>with</div>
-            <div>experienced</div>
+        <div className="title">
+          <div>
+            COACH
+          </div>
+          <div>
+            ×
+          </div>
+          <div>
+            XIEXUEMEI
           </div>
         </div>
-        <div className="detail">
-          <div className="pic"></div>
-          <div className="desc">
-            <div className="name active">XIE XUEMEI</div>
+        <div className="text-img">
+          <div class="img"></div>
+          <div class="text">
             <div>Founder of in Yoga</div>
             <div>Ashtanga Certified Coach</div>
             <div>Hatha Yoga Certified Coach</div>
@@ -77,18 +85,17 @@
         <div className="intorduce">
           <div></div>
           <div className="title">
-            <div>about</div>
-            <div>us</div>
-            <div className="chn">关于我们</div>
+            <div>ABOUT</div>
+            <div>US</div>
           </div>
           <div className="copy-right">
-            <div>Copyright © 2020 In yoga. All rights Reserved.</div>
+            <div>Copyright © 2020 In Yoga. All rights Reserved.</div>
             <div>蜀ICP备20002760号-2</div>
           </div>
         </div>
         <div className="detail">
           <div class="desc">
-            <div class="title">introduce</div>
+            <div class="title">Introduce</div>
             <div>
               印瑜伽成立于2018年，共有会员200余人，开展课程30余种
             </div>
@@ -100,13 +107,13 @@
             </div>
             <div>印瑜伽拥有经验丰富的教练团队，致力于会员的瑜伽练习体验</div>
             <div>以最专业的态度和最完美的姿态对待每一位会员</div>
-            <div>in life in yoga</div>
+            <div>In Life In Yoga</div>
             <div>享受生活，享受瑜伽</div>
-            <div class="title">wechat</div>
-            <div>
+            <div class="title">Wechat</div>
+            <div class="wechat">
               inyoga_studio
             </div>
-            <div class="title">address</div>
+            <div class="title">Address</div>
             <div>
               四川省成都市蒲江县鹤山镇鹤山南路 20 附 7 号
             </div>
@@ -135,7 +142,7 @@ export default defineComponent({
     onMounted(() => {
       setTimeout(() => {
         loading.value = false
-      }, 1500)
+      }, 2000)
     })
 
     return { loading, HomeHeader }
