@@ -66,19 +66,14 @@
       </div>
       <div className="page">
         <div className="title">
-          <div>3RD</div>
-          <div>anniversary</div>
-          <div>event</div>
-          <div className="date">12 / 11 / 2020</div>
-          <div className="chn">三周年纪念活动</div>
+          EVENTS
         </div>
-        <div className="info">
-          <div>HI FIVE,HELLO FUTURE!</div>
-          <div>印瑜伽从2018年创建起，已经度过了3个生日。</div>
-          <div>
-            为了阻止冒险家的脚步，血红祭祀在魔法万岁公会的帮助下，利用黑暗魔法赋予曾经被冒险者们击败的首领们新的力量，让他们前往龙牙高原阻击冒险者。不过那些首领刚一到龙牙高原就被红夜等人控制了起来。红夜开辟出了一个叫绯红界的空间，将那些首领软禁了起来，并以分身亲自坐镇看守。这样一来，那些被血红祭祀赋予新力量的首领们不但没有成为阻击冒险者的主力，反而成了冒险者们提高实力的工具。
+        <div className="news">
+          <div class="news-item">
+            <div class="title">3rd Anniversary Celebration</div>
+            <div class="date">11 / 19 / 2020</div>
+            <div class="chn">三周年庆典活动</div>
           </div>
-          <div>一路风雨，感恩有你。印瑜伽，(゜-゜)つロ 干杯~</div>
         </div>
       </div>
       <div className="page">
@@ -111,7 +106,7 @@
             <div>享受生活，享受瑜伽</div>
             <div class="title">Wechat</div>
             <div class="wechat">
-              inyoga_studio
+              InYoga_Studio
             </div>
             <div class="title">Address</div>
             <div>
