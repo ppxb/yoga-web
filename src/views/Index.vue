@@ -84,7 +84,11 @@
           </div>
           <div className="copy-right">
             <div>Copyright © 2020 In Yoga. All rights Reserved.</div>
-            <div>蜀ICP备20002760号-2</div>
+            <div>
+              <a href="http://beian.miit.gov.cn/" target="_blank"
+                >蜀ICP备20002760号-2</a
+              >
+            </div>
           </div>
         </div>
         <div className="detail">
