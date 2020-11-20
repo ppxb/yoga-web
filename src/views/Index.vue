@@ -31,11 +31,12 @@
         <div className="detail">
           <div className="text-img">
             <div class="text">
-              <div>Founder of in Yoga</div>
-              <div>Ashtanga Certified Coach</div>
-              <div>Hatha Yoga Certified Coach</div>
-              <div>American Yoga League Certified Instructor</div>
-              <div>KRIYOGA 400 hours certified coach</div>
+              <div>印瑜伽创始人</div>
+              <div>资深瑜伽教练</div>
+              <div>普拉提功能康复训练师暨高级私教认证</div>
+              <div>亚太瑜伽联盟瑜伽教练认证</div>
+              <div>KRIYOGA 200 小时TTC认证教练</div>
+              <div>维密天使瘦身训练营认证教练</div>
             </div>
           </div>
           <div class="img" />
@@ -56,11 +57,12 @@
         <div className="text-img">
           <div class="img"></div>
           <div class="text">
-            <div>Founder of in Yoga</div>
-            <div>Ashtanga Certified Coach</div>
-            <div>Hatha Yoga Certified Coach</div>
-            <div>American Yoga League Certified Instructor</div>
-            <div>KRIYOGA 400 hours certified coach</div>
+            <div>印瑜伽创始人</div>
+            <div>资深瑜伽教练</div>
+            <div>BILL ARCE 高温瑜伽教练认证</div>
+            <div>哈他瑜伽亚太国际瑜伽协会认证教练</div>
+            <div>阴瑜伽理疗专业教练暨球瑜伽专业教练</div>
+            <div>孕产及产后瑜伽认证教练</div>
           </div>
         </div>
       </div>
