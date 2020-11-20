@@ -77,43 +77,18 @@
         </div>
       </div>
       <div className="page">
-        <div className="intorduce">
-          <div></div>
-          <div className="title">
-            ABOUT
-          </div>
-          <div className="copy-right">
-            <div>Copyright © 2020 In Yoga. All rights Reserved.</div>
-            <div>
-              <a href="http://beian.miit.gov.cn/" target="_blank"
-                >蜀ICP备20002760号-2</a
-              >
-            </div>
-          </div>
+        <div></div>
+        <div class="text">
+          <div class="main">感受现在，尽在印瑜伽</div>
+          <div class="title">Wechat</div>
+          <div class="desc">InYoga_Studio</div>
         </div>
-        <div className="detail">
-          <div class="desc">
-            <div class="title">Introduce</div>
-            <div>
-              印瑜伽成立于2018年，共有会员200余人，开展课程30余种
-            </div>
-            <div>
-              瑜伽项目包括哈他瑜伽、阿斯汤加、阴瑜伽、球瑜伽
-            </div>
-            <div>
-              其他项目包括产后修复、维密塑形、康复理疗、高温瑜伽、速瘦减肥等
-            </div>
-            <div>印瑜伽拥有经验丰富的教练团队，致力于会员的瑜伽练习体验</div>
-            <div>以最专业的态度和最完美的姿态对待每一位会员</div>
-            <div>享受生活，享受瑜伽</div>
-            <div class="title">Wechat</div>
-            <div class="wechat">
-              InYoga_Studio
-            </div>
-            <div class="title">Address</div>
-            <div>
-              四川省成都市蒲江县鹤山镇鹤山南路 20 附 7 号
-            </div>
+        <div class="copyright">
+          <div>Copyright © 2020 In Yoga. All rights Reserved.</div>
+          <div>
+            <a href="http://beian.miit.gov.cn/" target="_blank"
+              >蜀ICP备20002760号-2</a
+            >
           </div>
         </div>
       </div>

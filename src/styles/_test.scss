@@ -199,51 +199,40 @@
   }
 
   &:nth-child(5) {
-    .intorduce {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > div {
       flex: 1;
+    }
+
+    .text {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      align-items: center;
+      color: #333;
+
+      .main {
+        font-size: 5em;
+        margin-bottom: 100px;
+      }
 
       .title {
-        color: #333;
-        font-size: 4em;
+        font-size: 2em;
         font-weight: 500;
       }
 
-      .copy-right {
-        color: #333;
-        width: fit-content;
-
-        & > div {
-          margin-top: 4px;
-        }
+      .desc {
+        font-size: 1.5em;
       }
     }
 
-    .detail {
-      flex: 6;
+    .copyright {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-
-      .desc {
-        color: #333;
-
-        & > div {
-          margin-bottom: 6px;
-        }
-
-        .wechat {
-          font-size: 1.25em;
-        }
-
-        .title {
-          margin: 20px 0;
-          font-weight: 500;
-          font-size: 2.25em;
-        }
-      }
+      justify-content: flex-end;
     }
   }
 }
